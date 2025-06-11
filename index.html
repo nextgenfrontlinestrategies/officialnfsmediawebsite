@@ -1,0 +1,2812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NFS Media: Elite Paid Ads, Social Media Marketing & Graphic Design. Elevate your brand with the best.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>NFS Media | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style>
+        :root {
+            --primary: #000;
+            --secondary: #fff;
+            --accent: #88bf4c;
+            --dark: #111;
+            --light: #fff;
+            --muted: #232323;
+        }
+        html, body {
+            background: var(--primary);
+            color: var(--secondary);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            scroll-behavior: smooth;
+            width: 100%;
+            min-width: 0;
+            overflow-x: hidden;
+        }
+        body {
+            min-height: 100vh;
+            width: 100vw;
+            min-width: 0;
+        }
+        /* Header */
+        .professional-header {
+            background: var(--primary);
+            border-bottom: 1.5px solid #222;
+            box-shadow: 0 2px 24px rgba(136,191,76,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            min-width: 0;
+        }
+        .header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.2rem 2rem;
+            gap: 2rem;
+            width: 100%;
+            min-width: 0;
+        }
+        .header-logo {
+            width: 4rem;
+            height: 4rem;
+            object-fit: contain;
+            border-radius: 12px;
+            background: var(--muted);
+            box-shadow: 0 2px 8px rgba(136,191,76,0.10);
+            border: 2px solid var(--accent);
+            transition: transform 0.2s;
+            min-width: 2.5rem;
+        }
+        .header-logo:hover {
+            transform: rotate(-7deg) scale(1.07);
+        }
+        .header-title-group {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.2rem;
+            min-width: 0;
+        }
+        .header-title {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--accent);
+            margin: 0;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 12px rgba(136,191,76,0.10);
+            word-break: break-word;
+        }
+        .header-tagline {
+            font-size: 1.08rem;
+            color: #e0e0e0;
+            margin: 0;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            word-break: break-word;
+        }
+        .professional-nav {
+            margin-left: auto;
+        }
+        .nav-list {
+            display: flex;
+            gap: 2.2rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        .nav-list li {
+            display: inline-block;
+        }
+        .nav-list a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.08rem;
+            padding: 0.4rem 1.1rem;
+            border-radius: 7px;
+            transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+            position: relative;
+            display: inline-block;
+            white-space: nowrap;
+        }
+        .nav-list a::after {
+            content: '';
+            display: block;
+            width: 0%;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.2s;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .nav-list a:hover,
+        .nav-list a:focus {
+            background: var(--accent);
+            color: var(--primary);
+            box-shadow: 0 2px 12px rgba(136,191,76,0.10);
+        }
+        .nav-list a:hover::after,
+        .nav-list a:focus::after {
+            width: 100%;
+        }
+
+        /* Hamburger styles */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 44px;
+            height: 44px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            z-index: 120;
+        }
+        .hamburger span {
+            display: block;
+            width: 28px;
+            height: 3.5px;
+            margin: 4px 0;
+            background: var(--accent);
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .hamburger.active span:nth-child(1) {
+            transform: translateY(7.5px) rotate(45deg);
+        }
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active span:nth-child(3) {
+            transform: translateY(-7.5px) rotate(-45deg);
+        }
+
+        /* Mobile nav */
+        @media (max-width: 900px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1.2rem;
+                padding: 1.2rem 1rem;
+            }
+            .header-title-group {
+                align-items: center;
+                min-width: unset;
+            }
+            .professional-nav {
+                margin-left: 0;
+                justify-content: center;
+                display: flex;
+                width: 100%;
+            }
+            .nav-list {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: rgba(24,24,24,0.98);
+                flex-direction: column;
+                align-items: center;
+                gap: 1.2rem;
+                padding: 5.5rem 0 2rem 0;
+                margin: 0;
+                width: 100vw;
+                min-width: 0;
+                height: 100vh;
+                z-index: 110;
+                transform: translateY(-100%);
+                transition: transform 0.35s cubic-bezier(.23,1.01,.32,1);
+                box-shadow: 0 8px 32px #88bf4c18;
+                border-bottom-left-radius: 24px;
+                border-bottom-right-radius: 24px;
+            }
+            .nav-list.open {
+                transform: translateY(0);
+            }
+            .nav-list li {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            .nav-list a {
+                font-size: 1.25rem;
+                padding: 1rem 2rem;
+                border-radius: 12px;
+                margin: 0.2rem 0;
+                width: 100%;
+                display: block;
+                background: none;
+                color: #fff;
+                transition: background 0.18s, color 0.18s;
+            }
+            .nav-list a:hover,
+            .nav-list a:focus {
+                background: var(--accent);
+                color: var(--primary);
+            }
+            .hamburger {
+                display: flex;
+                position: absolute;
+                top: 1.2rem;
+                right: 1.2rem;
+            }
+            .professional-nav {
+                width: 100%;
+                justify-content: flex-end;
+                align-items: center;
+                display: flex;
+                position: static;
+            }
+        }
+        @media (max-width: 600px) {
+            .header-inner {
+                padding: 1rem 0.5rem;
+            }
+            .header-title {
+                font-size: 1.3rem;
+            }
+            .header-logo {
+                width: 2.8rem;
+                height: 2.8rem;
+            }
+            .hamburger {
+                top: 0.7rem;
+                right: 0.7rem;
+            }
+            .nav-list {
+                padding-top: 4.2rem;
+            }
+        }
+        @media (min-width: 901px) {
+            .hamburger {
+                display: none !important;
+            }
+            .nav-list {
+                position: static;
+                flex-direction: row;
+                align-items: center;
+                gap: 2.2rem;
+                padding: 0;
+                height: auto;
+                background: none;
+                box-shadow: none;
+                transform: none !important;
+                width: auto;
+                min-width: 0;
+            }
+            .nav-list li {
+                display: inline-block;
+                width: auto;
+                text-align: left;
+            }
+            .nav-list a {
+                font-size: 1.08rem;
+                padding: 0.4rem 1.1rem;
+                border-radius: 7px;
+                margin: 0;
+                width: auto;
+                display: inline-block;
+                background: none;
+                color: var(--secondary);
+            }
+        }
+        /* Touch-friendly tap targets on mobile */
+        @media (hover: none) and (pointer: coarse) {
+            .nav-list a {
+                padding: 1.1rem 2rem;
+                font-size: 1.18rem;
+            }
+        }
+        /* Hero */
+        .hero {
+            background: linear-gradient(120deg, #111 0%, #232323 100%);
+            color: var(--secondary);
+            padding: 6rem 2rem 5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            min-width: 0;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            left: -80px;
+            top: -80px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, var(--accent) 0%, transparent 80%);
+            opacity: 0.18;
+            z-index: 0;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            right: -100px;
+            bottom: -100px;
+            width: 320px;
+            height: 320px;
+            background: radial-gradient(circle, var(--accent) 0%, transparent 80%);
+            opacity: 0.13;
+            z-index: 0;
+        }
+        .hero h1 {
+            font-size: 3.7rem;
+            margin-bottom: 1.2rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: var(--accent);
+            text-shadow: 0 2px 24px rgba(136,191,76,0.10);
+            position: relative;
+            z-index: 1;
+            word-break: break-word;
+        }
+        .hero p {
+            font-size: 1.7rem;
+            margin-bottom: 2.7rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #e0e0e0;
+            position: relative;
+            z-index: 1;
+            word-break: break-word;
+        }
+        .cta-btn {
+            background: var(--accent);
+            color: var(--primary);
+            padding: 1.2rem 2.7rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 24px rgba(136,191,76,0.13);
+            transition: background 0.2s, transform 0.2s, color 0.2s;
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            max-width: 320px;
+        }
+        .cta-btn:hover {
+            background: #a6e36a;
+            color: #111;
+            transform: translateY(-2px) scale(1.04);
+        }
+        /* Section */
+        .section {
+            max-width: 1200px;
+            margin: 3.5rem auto;
+            padding: 2.7rem;
+            background: #181818;
+            border-radius: 20px;
+            box-shadow: 0 4px 32px rgba(136,191,76,0.07);
+            position: relative;
+            width: 95vw;
+            min-width: 0;
+            box-sizing: border-box;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2.2rem;
+            color: var(--accent);
+            text-align: center;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 12px rgba(136,191,76,0.10);
+            word-break: break-word;
+        }
+        /* Services */
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            justify-content: center;
+            width: 100%;
+            min-width: 0;
+        }
+        .service-card {
+            flex: 1 1 300px;
+            background: #111;
+            border-radius: 16px;
+            padding: 2.2rem 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 16px rgba(136,191,76,0.08);
+            border: 1.5px solid #232323;
+            transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+            position: relative;
+            min-width: 220px;
+            max-width: 100%;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-7px) scale(1.04);
+            box-shadow: 0 8px 32px rgba(136,191,76,0.13);
+            border: 1.5px solid var(--accent);
+        }
+        .service-card h3 {
+            margin-top: 0;
+            color: var(--accent);
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            word-break: break-word;
+        }
+        .service-card p {
+            font-size: 1.08rem;
+            color: #e0e0e0;
+            word-break: break-word;
+        }
+        /* Portfolio */
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            width: 100%;
+            min-width: 0;
+        }
+        .portfolio-item {
+            flex: 1 1 320px;
+            background: #181818;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 2px 16px rgba(136,191,76,0.08);
+            border: 1.5px solid #232323;
+            transition: transform 0.2s, border 0.2s;
+            min-width: 220px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.04);
+            border: 1.5px solid var(--accent);
+        }
+        .portfolio-item img {
+            width: 100%;
+            display: block;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            filter: grayscale(0.2) contrast(1.1);
+            transition: filter 0.2s;
+        }
+        .portfolio-item:hover img {
+            filter: none;
+        }
+        .portfolio-item p {
+            padding: 1.1rem;
+            margin: 0;
+            font-size: 1.05rem;
+            color: var(--accent);
+            background: #111;
+            word-break: break-word;
+        }
+        /* About */
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            min-width: 0;
+        }
+        .about-text {
+            flex: 2;
+            font-size: 1.15rem;
+            color: #e0e0e0;
+            min-width: 0;
+            word-break: break-word;
+        }
+        .about-img {
+            flex: 1;
+            min-width: 180px;
+            max-width: 100%;
+        }
+        .about-img img {
+            width: 100%;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(136,191,76,0.10);
+            border: 2px solid var(--accent);
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        /* Contact */
+        .contact-form {
+            max-width: 520px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            width: 100%;
+            min-width: 0;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 1rem;
+            border-radius: 9px;
+            border: 1.5px solid #232323;
+            font-size: 1.08rem;
+            background: #181818;
+            color: var(--secondary);
+            transition: border 0.2s;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            border: 1.5px solid var(--accent);
+            outline: none;
+        }
+        .contact-form button {
+            background: var(--accent);
+            color: var(--primary);
+            border: none;
+            padding: 1.1rem;
+            border-radius: 9px;
+            font-size: 1.15rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            background: #a6e36a;
+            color: #111;
+        }
+        /* Testimonials */
+        .testimonial-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent);
+            margin-bottom: 0.7rem;
+            background: #232323;
+        }
+        /* Footer */
+        footer {
+            background: #181818;
+            color: var(--accent);
+            text-align: center;
+            padding: 2rem 0 1.2rem 0;
+            margin-top: 3.5rem;
+            font-size: 1.05rem;
+            letter-spacing: 1px;
+            border-top: 1.5px solid #232323;
+            width: 100vw;
+            min-width: 0;
+            box-sizing: border-box;
+        }
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 32px;
+            right: 32px;
+            z-index: 999;
+            background: var(--accent);
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 24px rgba(136,191,76,0.18);
+            font-size: 2rem;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .whatsapp-float:hover {
+            background: #a6e36a;
+            transform: scale(1.08);
+        }
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+            background: #181818;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent);
+            border-radius: 6px;
+        }
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1.2rem;
+                padding: 1.2rem 1rem;
+            }
+            .header-title-group {
+                align-items: center;
+                min-width: unset;
+            }
+            .professional-nav {
+                margin-left: 0;
+                justify-content: center;
+                display: flex;
+            }
+            .nav-list {
+                gap: 1.2rem;
+                justify-content: center;
+                width: 100%;
+            }
+            .section {
+                padding: 2rem 1rem;
+            }
+            .about-content {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            .services-list {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            .portfolio-grid {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 1rem;
+                padding: 1rem 0.5rem;
+            }
+            .header-title {
+                font-size: 1.5rem;
+            }
+            .header-logo {
+                width: 2.8rem;
+                height: 2.8rem;
+            }
+            .nav-list {
+                gap: 0.7rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero {
+                padding: 3.5rem 1rem 2.5rem 1rem;
+            }
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .cta-btn {
+                font-size: 1rem;
+                padding: 1rem 1.2rem;
+            }
+            .section {
+                padding: 1.2rem 0.5rem;
+                margin: 2rem auto;
+            }
+            .section-title {
+                font-size: 1.4rem;
+            }
+            .about-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .about-img {
+                min-width: 120px;
+            }
+            .service-card {
+                padding: 1.2rem 0.7rem;
+                min-width: 0;
+            }
+            .portfolio-item {
+                min-width: 0;
+            }
+            .portfolio-item img {
+                aspect-ratio: 16/10;
+            }
+            .contact-form {
+                padding: 0 0.2rem;
+            }
+            .whatsapp-float {
+                width: 44px;
+                height: 44px;
+                font-size: 1.3rem;
+                bottom: 16px;
+                right: 16px;
+            }
+            footer {
+                padding: 1.2rem 0 0.7rem 0;
+                font-size: 0.95rem;
+            }
+        }
+        @media (max-width: 480px) {
+            html, body {
+                font-size: 15px;
+            }
+            .header-inner {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.7rem;
+                padding: 0.7rem 0.2rem;
+            }
+            .header-title {
+                font-size: 1.1rem;
+            }
+            .header-logo {
+                width: 2rem;
+                height: 2rem;
+            }
+            .nav-list {
+                gap: 0.3rem;
+                flex-wrap: wrap;
+            }
+            .hero {
+                padding: 2rem 0.3rem 1.2rem 0.3rem;
+            }
+            .hero h1 {
+                font-size: 1.2rem;
+            }
+            .hero p {
+                font-size: 0.98rem;
+            }
+            .cta-btn {
+                font-size: 0.95rem;
+                padding: 0.7rem 0.7rem;
+            }
+            .section {
+                padding: 0.7rem 0.1rem;
+                margin: 1rem auto;
+            }
+            .section-title {
+                font-size: 1.1rem;
+            }
+            .about-content {
+                gap: 0.7rem;
+            }
+            .about-img {
+                min-width: 80px;
+            }
+            .service-card {
+                padding: 0.7rem 0.3rem;
+            }
+            .portfolio-item img {
+                aspect-ratio: 16/12;
+            }
+            .contact-form input, .contact-form textarea {
+                font-size: 0.98rem;
+                padding: 0.7rem;
+            }
+            .contact-form button {
+                font-size: 0.98rem;
+                padding: 0.7rem;
+            }
+            .whatsapp-float {
+                width: 38px;
+                height: 38px;
+                font-size: 1rem;
+                bottom: 8px;
+                right: 8px;
+            }
+            footer {
+                padding: 0.7rem 0 0.3rem 0;
+                font-size: 0.9rem;
+            }
+        }
+        /* Animations */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+        .fade-in-up {
+            animation: fadeInUp 1s cubic-bezier(.23,1.01,.32,1) both;
+        }
+    </style>
+    <script>
+        // Hamburger menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            const navList = document.querySelector('.nav-list');
+            if (hamburger && navList) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    navList.classList.toggle('open');
+                    if (navList.classList.contains('open')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+                // Close nav on link click (mobile)
+                navList.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        if (window.innerWidth <= 900) {
+                            hamburger.classList.remove('active');
+                            navList.classList.remove('open');
+                            document.body.style.overflow = '';
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <header class="professional-header" style="background-image: url('images/pexels-fbo-media-535159577-30269288.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="header-inner">
+            <!-- Artistic SVG + Logo -->
+            <div style="display:flex;align-items:center;gap:1.2rem;min-width:0;justify-content:center;flex:1;">
+                <div style="position:relative;width:4rem;height:4rem;display:flex;align-items:center;justify-content:center;min-width:2.5rem;">
+                    <!-- SVG shape as subtle background accent -->
+                    <svg viewBox="0 0 200 220" width="70" height="70" style="position:absolute;left:0;top:0;z-index:0;opacity:0.22;pointer-events:none;max-width:100%;height:auto;">
+                        <path d="M100,10
+                                 C170,10 190,90 190,130
+                                 C190,180 140,210 100,210
+                                 C60,210 10,180 10,130
+                                 C10,90 30,10 100,10
+                                 M100,210 L100,110
+                                 M85,130
+                                 C85,120 115,120 115,130
+                                 C115,140 100,150 100,150
+                                 C100,150 85,140 85,130"
+                              fill="none" stroke="#88bf4c" stroke-width="3"/>
+                    </svg>
+                    <!-- Actual logo image -->
+                    <img src="images/logo_og-removebg-preview.png" alt="NFS Media Logo"
+                        class="header-logo fade-in-up"
+                        style="animation-delay:0.1s;position:relative;z-index:1;background:transparent;border:none;box-shadow:none;width:56px;height:56px;max-width:100%;"/>
+                </div>
+                <div class="header-title-group fade-in-up" style="animation-delay:0.2s;">
+                    <h1 class="header-title" style="background: linear-gradient(90deg, #88bf4c 30%, #88bf4c 70%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; text-fill-color: transparent;">
+                        NFS Media
+                    </h1>
+                    <p class="header-tagline" style="font-size:1.08rem;letter-spacing:1px;color:#ffffff;">
+                        Paid Ads &nbsp;|&nbsp; Social Media &nbsp;|&nbsp; Design
+                    </p>
+                </div>
+            </div>
+            <button class="hamburger" aria-label="Open navigation" aria-controls="main-nav" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="professional-nav fade-in-up" style="animation-delay:0.3s;">
+                <ul class="nav-list" id="main-nav">
+                    <li><a href="#services"><span style="font-weight:700;">Services</span></a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="https://calendly.com/nfsmedia053/scheduled-meeting-w-nfs-media" style="background:linear-gradient(90deg,#ffffff 60%,#f2f2f2 100%);color:#88bf4c;font-weight:800;box-shadow:0 2px 12px #88bf4c33;padding:0.4rem 1.5rem;border-radius:18px;">
+                            Book Call
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero fade-in-up hero-with-bg" style="animation-delay:0.4s;">
+        <!-- Background Image Layer -->
+        <div class="hero-bg-img"></div>
+        <!-- Overlay for darkening the background image -->
+        <div class="hero-bg-overlay"></div>
+        <!-- Decorative SVG accent -->
+        <svg class="hero-accent-svg" viewBox="0 0 400 120" width="400" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="200" cy="60" rx="180" ry="40" fill="url(#heroAccentGradient)" opacity="0.18"/>
+            <defs>
+                <linearGradient id="heroAccentGradient" x1="0" y1="60" x2="400" y2="60" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#88bf4c"/>
+                    <stop offset="1" stop-color="#fff"/>
+                </linearGradient>
+            </defs>
+        </svg>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>
+                    NextGen Frontline Strategies
+                </h1>
+                <p>
+                    The top marketing experts and innovative designers in the world came together to make your brand irresistible.<br>
+                    <span class="hero-highlight">Experience next-level growth</span> with the world-class visuals and classic strategies of NFS Media.
+                </p>
+                <a href="https://calendly.com/nfsmedia053/scheduled-meeting-w-nfs-media" class="cta-btn hero-cta">Book a Strategy Call</a>
+            </div>
+        </div>
+    </section>
+    <style>
+    .hero-with-bg {
+        position: relative;
+        background: none !important;
+        overflow: hidden;
+        min-height: 480px;
+        width: 100vw;
+        max-width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .hero-bg-img {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        background: url('images/pexels-sora-shimazaki-5668503.jpg') center/cover no-repeat;
+        filter: brightness(0.85) saturate(1.1) blur(0.5px);
+        transition: filter 0.3s;
+        will-change: filter;
+    }
+    .hero-bg-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(120deg, #111 0%, #232323 100%);
+        opacity: 0.78;
+        pointer-events: none;
+    }
+    .hero-accent-svg {
+        position: absolute;
+        left: 50%;
+        bottom: -30px;
+        transform: translateX(-50%);
+        z-index: 2;
+        pointer-events: none;
+        width: 80vw;
+        max-width: 600px;
+        min-width: 220px;
+        opacity: 0.22;
+    }
+    .hero-content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 2rem 4rem 2rem;
+        box-sizing: border-box;
+        min-height: 480px;
+    }
+    .hero-text {
+        flex: 1 1 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2.2rem;
+        background: rgba(24,24,24,0.72);
+        border-radius: 1.5rem;
+        padding: 3rem 3.5rem;
+        box-shadow: 0 8px 32px #88bf4c18, 0 2px 12px #000a;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .hero-text h1 {
+        font-size: 3.2rem;
+        font-weight: 900;
+        color: var(--accent);
+        margin: 0 0 0.7rem 0;
+        letter-spacing: 2px;
+        text-shadow: 0 6px 32px #000a, 0 2px 12px #88bf4c;
+        line-height: 1.08;
+        word-break: break-word;
+    }
+    .hero-text p {
+        font-size: 1.4rem;
+        color: #fff;
+        margin: 0 0 1.7rem 0;
+        text-shadow: 0 2px 12px #000a;
+        line-height: 1.4;
+        word-break: break-word;
+    }
+    .hero-highlight {
+        color: var(--accent);
+        font-weight: 700;
+    }
+    .hero-cta {
+        display: inline-block;
+        background: var(--accent);
+        color: var(--primary);
+        padding: 1.2rem 2.7rem;
+        border: none;
+        border-radius: 30px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 8px 32px #88bf4c33, 0 2px 12px #000a;
+        transition: background 0.2s, transform 0.2s, color 0.2s;
+        width: 100%;
+        max-width: 520px;
+        text-align: center;
+        margin-top: 0.5rem;
+        outline: none;
+        text-decoration: none;
+    }
+    .hero-cta:hover,
+    .hero-cta:focus {
+        background: #a6e36a;
+        color: #111;
+        transform: translateY(-2px) scale(1.04);
+    }
+    @media (max-width: 900px) {
+        .hero-content {
+            flex-direction: column;
+            align-items: center;
+            padding: 2.5rem 1rem 2.5rem 1rem;
+            min-height: 340px;
+        }
+        .hero-text {
+            padding: 2rem 1.2rem;
+            max-width: 98vw;
+            gap: 1.2rem;
+        }
+        .hero-text h1 {
+            font-size: 2.1rem;
+        }
+        .hero-text p {
+            font-size: 1.05rem;
+        }
+        .hero-cta {
+            font-size: 1.08rem;
+            padding: 1rem 1.2rem;
+            max-width: 100%;
+        }
+    }
+    @media (max-width: 600px) {
+        .hero-content {
+            padding: 1.2rem 0.2rem 1.2rem 0.2rem;
+            min-height: 220px;
+        }
+        .hero-text {
+            padding: 1.2rem 0.5rem;
+            border-radius: 1rem;
+            gap: 0.8rem;
+        }
+        .hero-accent-svg {
+            width: 98vw;
+            max-width: 320px;
+        }
+        .hero-text h1 {
+            font-size: 1.3rem;
+        }
+        .hero-text p {
+            font-size: 0.98rem;
+        }
+        .hero-cta {
+            font-size: 0.98rem;
+            padding: 0.7rem 0.7rem;
+        }
+    }
+    </style>
+    <section class="section fade-in-up services-with-bg" id="services" style="animation-delay:0.5s;">
+        <!-- Optional background image layer -->
+        <div class="services-bg-img"></div>
+        <h2 class="section-title" style="color: #fff;">Our Expertise</h2>
+        <div class="services-list">
+            <div class="service-card">
+                <div class="service-icon">
+                    <!-- Paid Ads Icon (Bullseye/Target) -->
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="24" r="22" stroke="#88bf4c" stroke-width="3" fill="none"/>
+                        <circle cx="24" cy="24" r="12" stroke="#88bf4c" stroke-width="2" fill="none"/>
+                        <circle cx="24" cy="24" r="5" fill="#88bf4c"/>
+                    </svg>
+                </div>
+                <h3>Paid Advertisements</h3>
+                <p>
+                    We carefully choose your target group to make sure your marketing expenditure maximizes return and produces measurable growth.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <!-- Social Media Icon (Chat Bubbles) -->
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <ellipse cx="24" cy="20" rx="16" ry="10" fill="#88bf4c" opacity="0.13"/>
+                        <ellipse cx="24" cy="20" rx="13" ry="8" stroke="#88bf4c" stroke-width="2" fill="none"/>
+                        <ellipse cx="24" cy="20" rx="7" ry="4" fill="#88bf4c"/>
+                        <ellipse cx="36" cy="32" rx="7" ry="4" fill="#88bf4c" opacity="0.13"/>
+                        <ellipse cx="36" cy="32" rx="5" ry="3" stroke="#88bf4c" stroke-width="1.5" fill="none"/>
+                    </svg>
+                </div>
+                <h3>Social Media Marketing</h3>
+                <p>
+                    We build a community of devoted and engaged individuals to improve your brand's visibility and promote long-term business development.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <!-- Graphic Design Icon (Pen/Brush) -->
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <rect x="8" y="36" width="32" height="6" rx="3" fill="#88bf4c" opacity="0.13"/>
+                        <rect x="20" y="8" width="8" height="28" rx="4" fill="#88bf4c"/>
+                        <rect x="22" y="10" width="4" height="24" rx="2" fill="#fff" opacity="0.7"/>
+                        <ellipse cx="24" cy="40" rx="6" ry="2" fill="#88bf4c"/>
+                    </svg>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>
+                    Award-winning images for social media, print, and the web. We produce eye-catching images that set your business apart and promote trust in every encounter.
+                </p>
+            </div>
+        </div>
+        <style>
+            .services-with-bg {
+                position: relative;
+                overflow: hidden;
+            }
+            .services-bg-img {
+                position: absolute;
+                inset: 0;
+                z-index: 0;
+                background: url('images/pexels-cottonbro-5920934.jpg') center/cover no-repeat;
+                opacity: 0.25;
+                pointer-events: none;
+            }
+            .services-with-bg > *:not(.services-bg-img) {
+                position: relative;
+                z-index: 1;
+            }
+            .services-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2.5rem;
+                justify-content: center;
+                width: 100%;
+                min-width: 0;
+                margin-top: 2.5rem;
+                margin-bottom: 2.5rem;
+            }
+            .service-card {
+                background: #111;
+                border-radius: 16px;
+                padding: 2.2rem 1.5rem 2rem 1.5rem;
+                text-align: center;
+                box-shadow: 0 2px 16px rgba(136,191,76,0.08);
+                border: 1.5px solid #232323;
+                transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+                position: relative;
+                min-width: 220px;
+                max-width: 370px;
+                box-sizing: border-box;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .service-card:not(:last-child) {
+                border-right: 2px solid #232323;
+            }
+            .service-card:hover {
+                transform: translateY(-7px) scale(1.04);
+                box-shadow: 0 8px 32px rgba(136,191,76,0.13);
+                border: 1.5px solid var(--accent);
+            }
+            .service-icon {
+                margin-bottom: 1.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 56px;
+                height: 56px;
+                background: #181818;
+                border-radius: 50%;
+                box-shadow: 0 2px 12px #88bf4c22;
+            }
+            .service-card h3 {
+                margin-top: 0;
+                color: var(--accent);
+                font-size: 1.4rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                word-break: break-word;
+            }
+            .service-card p {
+                font-size: 1.08rem;
+                color: #e0e0e0;
+                word-break: break-word;
+                margin-bottom: 0;
+            }
+            /* Divider lines between cards on desktop */
+            @media (min-width: 901px) {
+                .service-card:not(:last-child) {
+                    border-right: 2px solid #232323;
+                }
+            }
+            @media (max-width: 900px) {
+                .services-list {
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+                .service-card {
+                    min-width: 0;
+                    max-width: 98vw;
+                    width: 100%;
+                    border-right: none !important;
+                    border-bottom: 2px solid #232323;
+                }
+                .service-card:last-child {
+                    border-bottom: none;
+                }
+            }
+            @media (max-width: 600px) {
+                .services-list {
+                    gap: 1.2rem;
+                    margin-top: 1.2rem;
+                    margin-bottom: 1.2rem;
+                }
+                .service-card {
+                    padding: 1.2rem 0.7rem 1rem 0.7rem;
+                    border-radius: 12px;
+                }
+                .service-icon {
+                    width: 40px;
+                    height: 40px;
+                }
+                .service-card h3 {
+                    font-size: 1.1rem;
+                }
+                .service-card p {
+                    font-size: 0.98rem;
+                }
+            }
+            /* Clean divider lines for mobile stacking */
+            .service-card + .service-card {
+                margin-top: 0;
+            }
+        </style>
+    </section>
+    </section>
+    <section class="section fade-in-up" id="portfolio" style="animation-delay:0.6s;">
+        <h2 class="section-title" style="color: #fff;">Featured Work</h2>
+        <div class="portfolio-grid">
+            <!-- Portfolio Item 1 -->
+            <div class="portfolio-item featured-portfolio-item">
+                <div class="portfolio-img-wrap">
+                    <img src="images/ChatGPT Image Jun 9, 2025, 02_01_12 PM.png" alt="Ad Campaign Example">
+                </div>
+                <div class="portfolio-desc">
+                    <h3 class="portfolio-title">Global E-Commerce Growth</h3>
+                    <p class="portfolio-highlight">
+                        <span class="portfolio-metric">4x ROAS</span> <span style="color: #fff;">creative, multi-channel paid ads.</span>
+                    </p>
+                    <p class="portfolio-detail" style="color: #fff;">
+                        Performance-driven ad creative for international growth.
+                    </p>
+                </div>
+            </div>
+            <!-- Portfolio Item 2 -->
+            <div class="portfolio-item featured-portfolio-item">
+                <div class="portfolio-img-wrap">
+                    <img src="images/pexels-rdne-7414211.jpg" alt="Social Media Strategy">
+                </div>
+                <div class="portfolio-desc">
+                    <h3 class="portfolio-title">Brand Launch & Social Growth</h3>
+                    <p class="portfolio-highlight">
+                        <span class="portfolio-metric">300% Follower Growth</span> <span style="color: #fff;"> viral engagement in 6 months.</span>
+                    </p>
+                    <p class="portfolio-detail" style="color: #fff;">
+                        Social strategy & content that built a loyal audience fast.
+                    </p>
+                </div>
+            </div>
+            <!-- Portfolio Item 3 -->
+            <div class="portfolio-item featured-portfolio-item">
+                <div class="portfolio-img-wrap">
+                    <img src="images/Green and Gray Conceptual Graph Instagram Post (1).png" alt="Graphic Design Sample">
+                </div>
+                <div class="portfolio-desc">
+                    <h3 class="portfolio-title">Tech Startup Rebrand</h3>
+                    <p class="portfolio-highlight" style="color: #fff;">
+                        Complete rebrand & visual identity, from logo to launch.
+                    </p>
+                    <p class="portfolio-detail" style="color: #fff;">
+                        Award-winning design for a standout digital presence.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <style>
+            .portfolio-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                justify-content: center;
+                align-items: stretch;
+                width: 100%;
+                min-width: 0;
+            }
+            .portfolio-item {
+                background: linear-gradient(135deg, #181818 80%, #88bf4c22 100%);
+                border-radius: 1.2rem;
+                box-shadow: 0 8px 32px #88bf4c18, 0 2px 12px #000a;
+                border: 1.5px solid #232323;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                transition: transform 0.22s, box-shadow 0.22s, border 0.22s;
+                position: relative;
+                width: 100%;
+                max-width: 420px;
+                margin: 0 auto;
+            }
+            .portfolio-img-wrap {
+                width: 100%;
+                aspect-ratio: 1/1;
+                background: #222;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+            }
+            .portfolio-img-wrap img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                border-top-left-radius: 1.2rem;
+                border-top-right-radius: 1.2rem;
+            }
+            .portfolio-desc {
+                background: #111;
+                padding: 1.3rem 1.2rem 1.1rem 1.2rem;
+                border-bottom-left-radius: 1.2rem;
+                border-bottom-right-radius: 1.2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+                min-height: 120px;
+                box-shadow: 0 2px 12px #88bf4c0a;
+            }
+            .portfolio-title {
+                color: var(--accent);
+                font-size: 1.18rem;
+                font-weight: 800;
+                margin: 0 0 0.2rem 0;
+                letter-spacing: 0.5px;
+                text-shadow: 0 2px 12px #88bf4c22;
+            }
+            .portfolio-highlight {
+                color: #fff;
+                font-size: 1.05rem;
+                font-weight: 600;
+                margin: 0;
+                line-height: 1.4;
+            }
+            .portfolio-metric {
+                color: var(--accent);
+                font-weight: 900;
+                font-size: 1.09rem;
+                letter-spacing: 0.5px;
+                background: #232323;
+                padding: 0.13em 0.7em;
+                border-radius: 8px;
+                margin-right: 0.4em;
+                box-shadow: 0 2px 8px #88bf4c22;
+                display: inline-block;
+            }
+            .portfolio-detail {
+                color: #e0e0e0;
+                font-size: 0.97rem;
+                margin: 0.3rem 0 0 0;
+                font-weight: 400;
+                letter-spacing: 0.1px;
+            }
+            /* Tablet: 2 columns */
+            @media (min-width: 700px) {
+                .portfolio-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .portfolio-item {
+                    max-width: 100%;
+                    margin: 0;
+                }
+            }
+            /* Desktop: 3 columns */
+            @media (min-width: 1000px) {
+                .portfolio-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+            /* Mobile adjustments */
+            @media (max-width: 600px) {
+                .portfolio-desc {
+                    padding: 1rem 0.8rem 0.9rem 0.8rem;
+                    min-height: 100px;
+                }
+                .portfolio-title {
+                    font-size: 1rem;
+                }
+                .portfolio-highlight {
+                    font-size: 0.97rem;
+                }
+            }
+        </style>
+    </section>
+        </div>
+    </section>
+    <section class="section fade-in-up about-with-bg" id="about" style="animation-delay:0.7s;">
+        <!-- Optional background image layer -->
+        <div class="about-bg-img"></div>
+        <h2 class="section-title" style="color: #fff;">About NFS Media</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    NFS Media brings together some of the world’s best marketing strategists and creative designers.
+                </p>
+                <p>
+                    We believe every brand deserves to stand out and scale with purpose. Our team delivers measurable growth, memorable visuals, and campaigns that raise the bar.
+                </p>
+                <p>
+                    Trusted by global brands and ambitious startups alike, we combine sharp analytics, bold creativity, and relentless passion to turn your vision into reality.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="images/carrie-allen-www-carrieallen-com-HCJKGkeKmW0-unsplash.jpg" alt="NFS Media Team">
+            </div>
+        </div>
+        <!-- Origin Story Section -->
+        <div class="about-content origin-story">
+            <div class="about-img">
+                <img src="images/pexels-oscar-sanchez197-11784437.jpg" alt="Origin Story Team Meeting">
+            </div>
+            <div class="about-text">
+                <h3 style="color:var(--accent);font-size:1.35rem;font-weight:800;margin-top:0;">Our Origin Story</h3>
+                <p>
+                    NFS Media started with one belief: great brands shouldn’t need billion-dollar budgets to make an impact.
+                </p>
+                <p>
+                    Founded by a marketer who got tired of watching creativity get wasted on noise, NFS Media was built to change that. What started with a laptop, late nights, and a clear vision quickly turned into real campaigns, real results, and real impact.
+                </p>
+                <p>
+                    Every win fuels the mission. Every challenge sharpens the edge. And the goal remains the same, to help brands stand out, scale up, and lead with confidence.
+                </p>
+            </div>
+        </div>
+        <!-- Core Values Section -->
+        <div class="about-content core-values">
+            <div class="about-text">
+                <h3 style="color:var(--accent);font-size:1.35rem;font-weight:800;margin-top:0;">Our Core Values</h3>
+                <ul style="padding-left:1.2em;list-style:square;color:#e0e0e0;font-size:1.08rem;">
+                    <li><strong style="color:var(--accent);">Integrity:</strong> We build trust through transparency, honesty, and results.</li>
+                    <li><strong style="color:var(--accent);">Creativity:</strong> Every project is a canvas, our ideas set you apart.</li>
+                    <li><strong style="color:var(--accent);">Collaboration:</strong> Your vision combined with our expertise drives unstoppable growth.</li>
+                    <li><strong style="color:var(--accent);">Relentless Improvement:</strong> We never settle. We test, learn, and optimize for your success.</li>
+                </ul>
+                <p style="margin-top:1.2rem;">
+                    <span style="color:var(--accent);font-weight:700;">What sets us apart?</span> We treat your brand like it’s our own, blending data-driven strategy with bold creativity to deliver results that truly matter.
+                </p>
+            </div>
+            <div class="about-img">
+                <img src="images/pexels-reynaldoyodia-13419686.jpg" alt="Core Values Collaboration">
+            </div>
+        </div>
+        <style>
+            .about-with-bg {
+                position: relative;
+                overflow: hidden;
+            }
+            .about-bg-img {
+                position: absolute;
+                inset: 0;
+                z-index: 0;
+                background: url('images/pexels-jeshoots-234527.jpg') center/cover no-repeat;
+                opacity: 0.05;
+                pointer-events: none;
+            }
+            .about-with-bg > *:not(.about-bg-img) {
+                position: relative;
+                z-index: 1;
+            }
+            .about-content {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2.5rem;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                min-width: 0;
+                box-sizing: border-box;
+                margin-bottom: 2.5rem;
+            }
+            .about-content:last-child {
+                margin-bottom: 0;
+            }
+            .about-text {
+                flex: 2 1 320px;
+                font-size: 1.15rem;
+                color: #e0e0e0;
+                min-width: 0;
+                word-break: break-word;
+                max-width: 100%;
+                line-height: 1.7;
+                letter-spacing: 0.01em;
+            }
+            .about-img {
+                flex: 1 1 220px;
+                min-width: 160px;
+                max-width: 420px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .about-img img {
+                width: 100%;
+                max-width: 340px;
+                border-radius: 14px;
+                box-shadow: 0 4px 24px rgba(136,191,76,0.10);
+                border: 2px solid var(--accent);
+                height: auto;
+                display: block;
+            }
+            /* Responsive: stack on mobile, side-by-side on desktop */
+            @media (max-width: 900px) {
+                .about-content {
+                    flex-direction: column !important;
+                    gap: 1.5rem;
+                    margin-bottom: 1.5rem;
+                }
+                .about-img, .about-text {
+                    min-width: 0;
+                    width: 100%;
+                    max-width: 100%;
+                    order: unset !important;
+                }
+                .about-img {
+                    justify-content: flex-start;
+                }
+            }
+            @media (max-width: 600px) {
+                .about-content {
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+                }
+                .about-text {
+                    font-size: 1rem;
+                    padding: 0 0.2rem;
+                }
+                .about-img {
+                    min-width: 80px;
+                    max-width: 100vw;
+                }
+                .about-img img {
+                    max-width: 98vw;
+                    border-radius: 10px;
+                }
+                .about-content ul {
+                    font-size: 0.98rem;
+                }
+            }
+            /* Alternate image/text order for origin story on large screens */
+            @media (min-width: 901px) {
+                .origin-story .about-img {
+                    order: 2;
+                    padding-left: 2rem;
+                }
+                .origin-story .about-text {
+                    order: 1;
+                }
+            }
+        </style>
+    </section>
+    </section>
+    <section class="section fade-in-up why-us-pro" id="why-us" style="animation-delay:0.8s;">
+        <div class="why-us-bg-img"></div>
+        <h2 class="section-title why-us-title">Why Work With Us?</h2>
+        <div class="why-us-grid">
+            <!-- Block 1 -->
+            <div class="why-us-card">
+                <div class="why-us-icon">
+                    <!-- Lightbulb/Creativity Icon -->
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                        <ellipse cx="24" cy="24" rx="22" ry="22" fill="#88bf4c" opacity="0.10"/>
+                        <path d="M24 8a12 12 0 0 1 6.7 21.8c-.5.4-.7 1-.7 1.6v2.1a2.5 2.5 0 0 1-2.5 2.5h-3a2.5 2.5 0 0 1-2.5-2.5v-2.1c0-.6-.2-1.2-.7-1.6A12 12 0 0 1 24 8Z" stroke="#88bf4c" stroke-width="2.2" fill="none"/>
+                        <rect x="20" y="36" width="8" height="3" rx="1.5" fill="#88bf4c"/>
+                        <rect x="22" y="39.5" width="4" height="2" rx="1" fill="#88bf4c" opacity="0.7"/>
+                    </svg>
+                </div>
+                <h3 class="why-us-heading">Ingenuity</h3>
+                <p class="why-us-desc">
+                    Your brand deserves to make a powerful and lasting impression. We ensure your website reflects your unique identity and stands out in your market.
+                </p>
+            </div>
+            <!-- Block 2 -->
+            <div class="why-us-card">
+                <div class="why-us-icon">
+                    <!-- Chart/Results Icon -->
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                        <ellipse cx="24" cy="24" rx="22" ry="22" fill="#88bf4c" opacity="0.10"/>
+                        <rect x="12" y="28" width="5" height="8" rx="2.5" fill="#88bf4c"/>
+                        <rect x="21.5" y="20" width="5" height="16" rx="2.5" fill="#88bf4c"/>
+                        <rect x="31" y="14" width="5" height="22" rx="2.5" fill="#88bf4c"/>
+                        <path d="M12 36h24" stroke="#88bf4c" stroke-width="2"/>
+                    </svg>
+                </div>
+                <h3 class="why-us-heading">Synergy</h3>
+                <p class="why-us-desc">
+                    Experience a website designed to convert visitors into customers, helping you achieve measurable business growth and greater market impact.
+                </p>
+            </div>
+            <!-- Block 3 -->
+            <div class="why-us-card">
+                <div class="why-us-icon">
+                    <!-- Collaboration/Handshake Icon -->
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                        <ellipse cx="24" cy="24" rx="22" ry="22" fill="#88bf4c" opacity="0.10"/>
+                        <path d="M14 28l6 6a4 4 0 0 0 5.7 0l8.3-8.3a2.5 2.5 0 0 0-3.5-3.5l-2.5 2.5-3-3a2.5 2.5 0 0 0-3.5 3.5l3 3" stroke="#88bf4c" stroke-width="2.2" fill="none"/>
+                        <circle cx="16" cy="32" r="2" fill="#88bf4c"/>
+                        <circle cx="32" cy="16" r="2" fill="#88bf4c"/>
+                    </svg>
+                </div>
+                <h3 class="why-us-heading">Alignment</h3>
+                <p class="why-us-desc">
+                    Your vision guides every step of the process. We work closely with you to ensure a smooth, transparent, and efficient project experience.
+                </p>
+            </div>
+            <!-- Block 4 -->
+            <div class="why-us-card">
+                <div class="why-us-icon">
+                    <!-- Trophy/Success Icon -->
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+                        <ellipse cx="24" cy="24" rx="22" ry="22" fill="#88bf4c" opacity="0.10"/>
+                        <path d="M16 12h16v6a8 8 0 0 1-16 0v-6Z" stroke="#88bf4c" stroke-width="2.2" fill="none"/>
+                        <path d="M24 26v6" stroke="#88bf4c" stroke-width="2"/>
+                        <rect x="20" y="32" width="8" height="3" rx="1.5" fill="#88bf4c"/>
+                        <circle cx="24" cy="10" r="2" fill="#88bf4c"/>
+                    </svg>
+                </div>
+                <h3 class="why-us-heading">Reliability</h3>
+                <p class="why-us-desc">
+                    Our experience means you can trust that your project will be delivered on time, on budget, and to the highest standard, helping you achieve the results you expect and deserve.
+                </p>
+            </div>
+        </div>
+        <style>
+            .why-us-pro {
+                position: relative;
+                overflow: hidden;
+                padding: 0;
+                background: none;
+            }
+            .why-us-bg-img {
+                position: absolute;
+                inset: 0;
+                z-index: 0;
+                background: url('images/pexels-ron-lach-9757563.jpg') center/cover no-repeat;
+                opacity: 0.32;
+                pointer-events: none;
+            }
+            .why-us-pro > *:not(.why-us-bg-img) {
+                position: relative;
+                z-index: 1;
+            }
+            .why-us-title {
+                color: #fff;
+                margin-bottom: 2.2rem;
+                font-size: 2rem;
+                font-weight: 900;
+                letter-spacing: 1px;
+                text-align: center;
+                line-height: 1.1;
+                word-break: break-word;
+            }
+            .why-us-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+                width: 100%;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 0.5rem 0.5rem 0.5rem;
+            }
+            .why-us-card {
+                background: #181818ee;
+                border-radius: 1.2rem;
+                box-shadow: 0 2px 16px #88bf4c18, 0 2px 12px #000a;
+                padding: 2.1rem 1.3rem 1.7rem 1.3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 1.1rem;
+                transition: box-shadow 0.18s, transform 0.18s, background 0.18s;
+                border: 1.5px solid #232323;
+                min-width: 0;
+                width: 100%;
+            }
+            .why-us-icon {
+                width: 56px;
+                height: 56px;
+                margin-bottom: 0.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #232323;
+                border-radius: 50%;
+                box-shadow: 0 2px 12px #88bf4c22;
+                transition: transform 0.18s;
+            }
+            .why-us-heading {
+                font-size: 1.25rem;
+                font-weight: 800;
+                color: var(--accent, #88bf4c);
+                margin: 0;
+                letter-spacing: 0.5px;
+                line-height: 1.2;
+                word-break: break-word;
+            }
+            .why-us-desc {
+                font-size: 1.08rem;
+                color: #e0e0e0;
+                margin: 0;
+                line-height: 1.6;
+                word-break: break-word;
+                font-weight: 500;
+            }
+            /* Touch-friendly tap targets for any buttons (none in this section, but future-proof) */
+            .why-us-card button,
+            .why-us-card a.button {
+                display: inline-block;
+                margin-top: 1.1rem;
+                padding: 1.1rem 2.2rem;
+                font-size: 1.1rem;
+                font-weight: 700;
+                border-radius: 30px;
+                background: var(--accent, #88bf4c);
+                color: var(--primary, #000);
+                border: none;
+                cursor: pointer;
+                box-shadow: 0 4px 24px #88bf4c33;
+                transition: background 0.2s, color 0.2s, transform 0.2s;
+                text-decoration: none;
+                outline: none;
+                min-width: 180px;
+                text-align: center;
+            }
+            .why-us-card button:hover,
+            .why-us-card a.button:hover,
+            .why-us-card button:focus,
+            .why-us-card a.button:focus {
+                background: #a6e36a;
+                color: #111;
+                transform: translateY(-2px) scale(1.04);
+            }
+            /* Hover effect for cards/icons */
+            .why-us-card:hover .why-us-icon,
+            .why-us-card:focus-within .why-us-icon {
+                transform: scale(1.10) rotate(-3deg);
+                box-shadow: 0 8px 32px #88bf4c33;
+                background: #232323ee;
+            }
+            .why-us-card:hover,
+            .why-us-card:focus-within {
+                background: #232323f2;
+                box-shadow: 0 8px 32px #88bf4c33, 0 2px 12px #000a;
+                border-color: var(--accent, #88bf4c);
+                transform: translateY(-3px) scale(1.015);
+            }
+            /* Responsive: Tablet and up (2x2 grid) */
+            @media (min-width: 768px) {
+                .why-us-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 2.2rem;
+                    padding: 0 1.5rem 1.5rem 1.5rem;
+                }
+                .why-us-card {
+                    align-items: flex-start;
+                    text-align: left;
+                    padding: 2.2rem 2rem 2rem 2rem;
+                    min-height: 270px;
+                }
+                .why-us-icon {
+                    margin-bottom: 0.1rem;
+                    margin-right: 0.7rem;
+                    align-self: flex-start;
+                }
+            }
+            /* Desktop: 4 columns if enough width */
+            @media (min-width: 1024px) {
+                .why-us-grid {
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 2.5rem;
+                    padding: 0 2rem 2rem 2rem;
+                }
+                .why-us-card {
+                    min-width: 0;
+                    max-width: 100%;
+                    align-items: flex-start;
+                    text-align: left;
+                    padding: 2.5rem 2rem 2.2rem 2rem;
+                }
+                .why-us-icon {
+                    margin-bottom: 0.1rem;
+                    margin-right: 0.7rem;
+                }
+            }
+            /* Mobile adjustments */
+            @media (max-width: 600px) {
+                .why-us-title {
+                    font-size: 1.2rem;
+                    margin-bottom: 1.1rem;
+                }
+                .why-us-card {
+                    padding: 1.2rem 0.7rem 1rem 0.7rem;
+                    border-radius: 0.9rem;
+                    gap: 0.7rem;
+                }
+                .why-us-icon {
+                    width: 40px;
+                    height: 40px;
+                }
+                .why-us-heading {
+                    font-size: 1.05rem;
+                }
+                .why-us-desc {
+                    font-size: 0.98rem;
+                }
+            }
+            /* Prevent overflow and keep everything pixel-perfect */
+            .why-us-pro, .why-us-grid, .why-us-card, .why-us-icon {
+                box-sizing: border-box;
+            }
+        </style>
+    </section>
+    <section class="section fade-in-up testimonials-with-bg" id="testimonials" style="animation-delay:0.9s;">
+        <!-- Optional background image layer -->
+        <div class="testimonials-bg-img"></div>
+        <h2 class="section-title" style="color: #fff;">What Our Clients Say</h2>
+        <div class="testimonials-carousel">
+            <button class="carousel-arrow carousel-arrow-left" aria-label="Previous testimonial">&#8592;</button>
+            <div class="carousel-track">
+                <div class="testimonial-card">
+                    <img src="images/Minimalist Profile Icon on Green (1).png" alt="Bernice V." class="testimonial-avatar">
+                    <svg width="32" height="32" style="position:absolute;top:1.2rem;left:1.2rem;opacity:0.12;" fill="currentColor"><text x="0" y="28" font-size="32" font-family="serif">“</text></svg>
+                    <p>
+                        “NFS Media has helped my restaurant a lot. Their paid ad services brought in more customers, even in quiet months. Ek kan eerlik sê hulle weet presies wat hulle doen, en die resultate wys dit.”
+                    </p>
+                    <strong class="testimonial-name">— Bernice V., CMO</strong>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/Minimalist Profile Icon on Green (1).png" alt="Sechaba M." class="testimonial-avatar">
+                    <svg width="32" height="32" style="position:absolute;top:1.2rem;left:1.2rem;opacity:0.12;" fill="currentColor"><text x="0" y="28" font-size="32" font-family="serif">“</text></svg>
+                    <p>
+                        “What I love about NFS Media is how simple they make everything. They’re very professional but still easy to talk to.”
+                    </p>
+                    <strong class="testimonial-name">— Sechaba M., Founder</strong>
+                </div>
+                <div class="testimonial-card">
+                    <img src="images/Minimalist Profile Icon on Green (1).png" alt="Zanele D." class="testimonial-avatar">
+                    <svg width="32" height="32" style="position:absolute;top:1.2rem;left:1.2rem;opacity:0.12;" fill="currentColor"><text x="0" y="28" font-size="32" font-family="serif">“</text></svg>
+                    <p>
+                        “I wasn’t sure at first, but NFS Media showed us how powerful ads can be. We’ve seen a huge difference in our leads, and I’m grateful for their help. Siyabonga kakhulu.”
+                    </p>
+                    <strong class="testimonial-name">— Zanele D., CEO</strong>
+                </div>
+            </div>
+            <button class="carousel-arrow carousel-arrow-right" aria-label="Next testimonial">&#8594;</button>
+        </div>
+        <style>
+            .testimonials-with-bg {
+                position: relative;
+                overflow: hidden;
+            }
+            .testimonials-bg-img {
+                position: absolute;
+                inset: 0;
+                z-index: 0;
+                background: url('images/pexels-jep-gambardella-7689664.jpg') center/cover no-repeat;
+                opacity: 0.25;
+                pointer-events: none;
+            }
+            .testimonials-with-bg > *:not(.testimonials-bg-img) {
+                position: relative;
+                z-index: 1;
+            }
+            .testimonials-carousel {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+            .carousel-track {
+                display: flex;
+                gap: 2rem;
+                width: 100%;
+                justify-content: center;
+                align-items: stretch;
+                transition: transform 0.4s cubic-bezier(.23,1.01,.32,1);
+            }
+            .testimonial-card {
+                background: #111;
+                border-radius: 16px;
+                padding: 2.2rem 1.5rem 2rem 1.5rem;
+                text-align: center;
+                box-shadow: 0 2px 16px rgba(136,191,76,0.08);
+                border: 1.5px solid #232323;
+                position: relative;
+                min-width: 220px;
+                max-width: 370px;
+                box-sizing: border-box;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 auto;
+            }
+            .testimonial-avatar {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 2px solid var(--accent);
+                margin-bottom: 0.7rem;
+                background: #232323;
+            }
+            .testimonial-card p {
+                font-size: 1.08rem;
+                color: #e0e0e0;
+                margin: 1.2rem 0 0.7rem 0;
+                word-break: break-word;
+            }
+            .testimonial-name {
+                display: block;
+                margin-top: 1.2rem;
+                color: var(--accent);
+                font-weight: 700;
+                font-size: 1.05rem;
+                letter-spacing: 0.5px;
+            }
+            .carousel-arrow {
+                background: #232323;
+                color: var(--accent);
+                border: none;
+                border-radius: 50%;
+                width: 2.5rem;
+                height: 2.5rem;
+                font-size: 1.5rem;
+                cursor: pointer;
+                box-shadow: 0 2px 12px #88bf4c22;
+                display: none;
+                align-items: center;
+                justify-content: center;
+                transition: background 0.2s, color 0.2s;
+                z-index: 2;
+            }
+            .carousel-arrow:hover,
+            .carousel-arrow:focus {
+                background: var(--accent);
+                color: #111;
+            }
+            /* Desktop: 3 columns */
+            @media (min-width: 1000px) {
+                .carousel-track {
+                    flex-wrap: nowrap;
+                    gap: 2.5rem;
+                }
+                .testimonial-card {
+                    min-width: 0;
+                    max-width: 370px;
+                    flex: 1 1 0;
+                }
+                .carousel-arrow {
+                    display: none !important;
+                }
+            }
+            /* Tablet: 2 columns */
+            @media (min-width: 700px) and (max-width: 999px) {
+                .carousel-track {
+                    flex-wrap: nowrap;
+                    gap: 2rem;
+                }
+                .testimonial-card {
+                    min-width: 0;
+                    max-width: 400px;
+                    flex: 1 1 0;
+                }
+                .carousel-arrow {
+                    display: none !important;
+                }
+            }
+            /* Mobile: swipeable carousel, stacked cards */
+            @media (max-width: 699px) {
+                .testimonials-carousel {
+                    max-width: 98vw;
+                    overflow: hidden;
+                }
+                .carousel-track {
+                    gap: 0;
+                    transition: transform 0.4s cubic-bezier(.23,1.01,.32,1);
+                    will-change: transform;
+                }
+                .testimonial-card {
+                    min-width: 90vw;
+                    max-width: 98vw;
+                    margin: 0 4vw;
+                }
+                .carousel-arrow {
+                    display: flex;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: #232323cc;
+                }
+                .carousel-arrow-left {
+                    left: 0.2rem;
+                }
+                .carousel-arrow-right {
+                    right: 0.2rem;
+                }
+            }
+        </style>
+        <script>
+            // Simple swipeable carousel for testimonials on mobile
+            (function() {
+                const track = document.querySelector('.carousel-track');
+                const cards = Array.from(track.children);
+                const leftBtn = document.querySelector('.carousel-arrow-left');
+                const rightBtn = document.querySelector('.carousel-arrow-right');
+                let idx = 0;
+                function updateCarousel() {
+                    if(window.innerWidth < 700) {
+                        track.style.transform = `translateX(-${idx * 100}vw)`;
+                        leftBtn.style.display = idx === 0 ? 'none' : 'flex';
+                        rightBtn.style.display = idx === cards.length - 1 ? 'none' : 'flex';
+                    } else {
+                        track.style.transform = '';
+                        leftBtn.style.display = 'none';
+                        rightBtn.style.display = 'none';
+                    }
+                }
+                leftBtn.addEventListener('click', () => {
+                    if(idx > 0) { idx--; updateCarousel(); }
+                });
+                rightBtn.addEventListener('click', () => {
+                    if(idx < cards.length - 1) { idx++; updateCarousel(); }
+                });
+                window.addEventListener('resize', updateCarousel);
+                updateCarousel();
+
+                // Touch swipe support
+                let startX = null;
+                track.addEventListener('touchstart', e => {
+                    if(window.innerWidth >= 700) return;
+                    startX = e.touches[0].clientX;
+                });
+                track.addEventListener('touchmove', e => {
+                    if(startX === null) return;
+                    let dx = e.touches[0].clientX - startX;
+                    // Optional: visually move track while swiping (not implemented for simplicity)
+                });
+                track.addEventListener('touchend', e => {
+                    if(startX === null) return;
+                    let endX = e.changedTouches[0].clientX;
+                    let dx = endX - startX;
+                    if(Math.abs(dx) > 50) {
+                        if(dx < 0 && idx < cards.length - 1) idx++;
+                        if(dx > 0 && idx > 0) idx--;
+                        updateCarousel();
+                    }
+                    startX = null;
+                });
+            })();
+        </script>
+    </section>
+    <section class="section fade-in-up contact-with-bg" id="contact" style="animation-delay:1s;">
+        <!-- Optional background image layer -->
+        <div class="contact-bg-img"></div>
+        <h2 class="section-title" style="color: #fff;">Contact Us</h2>
+        <div class="contact-flex">
+        <form class="contact-form" action="https://formspree.io/f/xgvyabal" method="POST">
+                <div class="form-group">
+                    <label for="contact-name">Your Name</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Enter your name" required>
+                    <span class="form-feedback"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Your Email</label>
+                    <input type="email" id="contact-email" name="email" placeholder="you@email.com" required>
+                    <span class="form-feedback"></span>
+                </div>
+                <div class="form-group">
+                    <label for="contact-message">How can we help you?</label>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                    <span class="form-feedback"></span>
+                </div>
+                <!-- Add a hidden input for redirect or spam prevention if needed -->
+                <input type="hidden" name="_subject" value="New submission from NFS Media Contact Form">
+                <button type="submit" class="contact-cta-btn">Send Message</button>
+                <div class="form-status" aria-live="polite"></div>
+            </form>
+            <div class="contact-info">
+                <h3 style="color:#88bf4c;font-size:1.18rem;font-weight:700;margin-top:0;">Let's Connect</h3>
+                <p style="color:#fff;opacity:0.85;font-size:1.08rem;margin-bottom:1.2rem;">
+                    Get in touch for a free strategy session or simply to say hello. Our team is committed to responding within 24 hours with a thoughtful and personalized reply.
+                </p>
+                <div class="contact-details">
+                    <p>
+                        <svg width="18" height="18" fill="#88bf4c" style="vertical-align:middle;margin-right:6px;" viewBox="0 0 24 24"><path d="M21 8V7l-3 2-2-2-3 2-2-2-3 2V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8"/></svg>
+                        <a href="mailto:sales@nfsmedia.co.za" style="color:#88bf4c;text-decoration:none;">sales@nfsmedia.co.za</a>
+                    </p>
+                    <p>
+                        <svg width="18" height="18" fill="#88bf4c" style="vertical-align:middle;margin-right:6px;" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.35.27 2.67.76 3.88a1 1 0 0 1-.21 1.11l-2.2 2.2z"/></svg>
+                        <a href="tel:+27817721183" style="color:#88bf4c;text-decoration:none;">+27 81 772 1183</a>
+                    </p>
+                    <div style="margin-top:1.2rem;">
+                        <a href="https://wa.me/+27817721183" target="_blank" rel="noopener" class="contact-social" aria-label="WhatsApp">
+                            <svg width="22" height="22" fill="#88bf4c" viewBox="0 0 32 32"><path d="M16 3C9.373 3 4 8.373 4 15c0 2.65.87 5.09 2.36 7.09L4 29l7.18-2.33A12.93 12.93 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.94 0-3.78-.5-5.36-1.37l-.38-.22-4.27 1.39 1.4-4.16-.25-.4A9.97 9.97 0 0 1 6 15c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.56-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.35-.01-.54-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.03 2.81 1.18 3 .15.19 2.03 3.1 4.93 4.23.69.29 1.23.46 1.65.59.69.22 1.32.19 1.82.12.56-.08 1.65-.67 1.89-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"/></svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .contact-with-bg {
+                position: relative;
+                overflow: hidden;
+            }
+            .contact-bg-img {
+                position: absolute;
+                inset: 0;
+                z-index: 0;
+                background: url('images/pexels-pixabay-265087.jpg') center/cover no-repeat;
+                opacity: 0.10;
+                pointer-events: none;
+            }
+            .contact-with-bg > *:not(.contact-bg-img) {
+                position: relative;
+                z-index: 1;
+            }
+            .contact-flex {
+                display: flex;
+                gap: 3rem;
+                align-items: flex-start;
+                justify-content: center;
+                max-width: 1100px;
+                margin: 0 auto;
+                flex-wrap: wrap;
+            }
+            .contact-form {
+                flex: 2 1 340px;
+                background: #181818;
+                border-radius: 18px;
+                box-shadow: 0 4px 24px #88bf4c11;
+                padding: 2.2rem 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1.3rem;
+                width: 100%;
+                min-width: 0;
+                max-width: 520px;
+            }
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                gap: 0.4rem;
+                width: 100%;
+            }
+            .form-group label {
+                color: #fff;
+                font-weight: 600;
+                font-size: 1.08rem;
+                margin-bottom: 0.1rem;
+                letter-spacing: 0.5px;
+            }
+            .contact-form input,
+            .contact-form textarea {
+                padding: 1.1rem 1rem;
+                border-radius: 9px;
+                border: 1.5px solid #232323;
+                font-size: 1.13rem;
+                background: #232323;
+                color: var(--secondary);
+                transition: border 0.2s, box-shadow 0.2s;
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 0.1rem;
+            }
+            .contact-form input:focus,
+            .contact-form textarea:focus {
+                border: 1.5px solid var(--accent);
+                outline: none;
+                box-shadow: 0 2px 12px #88bf4c33;
+            }
+            .form-feedback {
+                color: #ff6b6b;
+                font-size: 0.97rem;
+                min-height: 1.1em;
+                margin-top: 0.1em;
+            }
+            .contact-cta-btn {
+                background: var(--accent);
+                color: var(--primary);
+                padding: 1.2rem 2.7rem;
+                border: none;
+                border-radius: 30px;
+                font-size: 1.25rem;
+                font-weight: 800;
+                cursor: pointer;
+                box-shadow: 0 4px 24px #88bf4c33;
+                transition: background 0.2s, transform 0.2s, color 0.2s;
+                width: 100%;
+                margin-top: 0.7rem;
+                letter-spacing: 1px;
+            }
+            .contact-cta-btn:hover,
+            .contact-cta-btn:focus {
+                background: #a6e36a;
+                color: #111;
+                transform: translateY(-2px) scale(1.04);
+            }
+            .form-status {
+                margin-top: 1rem;
+                font-size: 1.08rem;
+                color: var(--accent);
+                min-height: 1.2em;
+                text-align: center;
+                font-weight: 600;
+            }
+            .contact-info {
+                flex: 1 1 220px;
+                background: #111;
+                border-radius: 18px;
+                box-shadow: 0 4px 24px #88bf4c11;
+                padding: 2.2rem 2rem;
+                color: #fff;
+                min-width: 220px;
+                max-width: 340px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                gap: 0.7rem;
+            }
+            .contact-details p {
+                margin: 0 0 0.7rem 0;
+                font-size: 1.08rem;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            .contact-details a {
+                color: #88bf4c;
+                text-decoration: none;
+                font-weight: 600;
+                transition: color 0.2s;
+            }
+            .contact-details a:hover,
+            .contact-details a:focus {
+                color: #a6e36a;
+                text-decoration: underline;
+            }
+            .contact-social {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5em;
+                background: #232323;
+                border-radius: 8px;
+                padding: 0.5em 1em;
+                color: #88bf4c;
+                font-weight: 700;
+                font-size: 1.08rem;
+                text-decoration: none;
+                transition: background 0.2s, color 0.2s;
+            }
+            .contact-social:hover,
+            .contact-social:focus {
+                background: #88bf4c;
+                color: #111;
+            }
+            /* Responsive styles */
+            @media (max-width: 900px) {
+                .contact-flex {
+                    flex-direction: column;
+                    gap: 2rem;
+                    align-items: stretch;
+                }
+                .contact-form,
+                .contact-info {
+                    max-width: 100vw;
+                    padding: 1.5rem 1rem;
+                }
+            }
+            @media (max-width: 600px) {
+                .contact-form,
+                .contact-info {
+                    padding: 1rem 0.3rem;
+                    border-radius: 10px;
+                }
+                .contact-form input,
+                .contact-form textarea {
+                    font-size: 1.05rem;
+                    padding: 1rem 0.7rem;
+                }
+                .contact-cta-btn {
+                    font-size: 1.08rem;
+                    padding: 1rem 1.2rem;
+                }
+                .contact-info {
+                    font-size: 0.98rem;
+                }
+            }
+        </style>
+        <script>
+            // Contact form validation and feedback
+            (function() {
+                const form = document.querySelector('.contact-form');
+                const status = form.querySelector('.form-status');
+                const fields = [
+                    {input: form.querySelector('#contact-name'), feedback: form.querySelector('#contact-name').parentElement.querySelector('.form-feedback'), type: 'text'},
+                    {input: form.querySelector('#contact-email'), feedback: form.querySelector('#contact-email').parentElement.querySelector('.form-feedback'), type: 'email'},
+                    {input: form.querySelector('#contact-message'), feedback: form.querySelector('#contact-message').parentElement.querySelector('.form-feedback'), type: 'textarea'}
+                ];
+                function validateEmail(email) {
+                    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+                }
+                form.addEventListener('submit', function(e) {
+                    let valid = true;
+                    fields.forEach(f => {
+                        f.feedback.textContent = '';
+                        f.input.classList.remove('invalid');
+                    });
+                    if (!fields[0].input.value.trim()) {
+                        fields[0].feedback.textContent = 'Please enter your name.';
+                        fields[0].input.classList.add('invalid');
+                        valid = false;
+                    }
+                    if (!fields[1].input.value.trim() || !validateEmail(fields[1].input.value)) {
+                        fields[1].feedback.textContent = 'Please enter a valid email address.';
+                        fields[1].input.classList.add('invalid');
+                        valid = false;
+                    }
+                    if (!fields[2].input.value.trim()) {
+                        fields[2].feedback.textContent = 'Please enter your message.';
+                        fields[2].input.classList.add('invalid');
+                        valid = false;
+                    }
+                    if (!valid) {
+                        e.preventDefault();
+                        status.textContent = '';
+                    } else {
+                        status.textContent = 'Sending...';
+                    }
+                });
+                fields.forEach(f => {
+                    f.input.addEventListener('input', function() {
+                        f.feedback.textContent = '';
+                        f.input.classList.remove('invalid');
+                    });
+                });
+                // Optional: show success message after submission (for demo)
+                form.addEventListener('reset', function() {
+                    status.textContent = 'Thank you! We will get back to you soon.';
+                });
+            })();
+        </script>
+    </section>
+    <footer class="simple-footer" style="background-image: url('images/pexels-tofros-com-83191-257853.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="footer-content">
+            <!-- Brand/logo -->
+            <div class="footer-brand">
+                <img src="images/logo_og-removebg-preview.png" alt="NFS Media Logo" class="footer-logo">
+                <span class="footer-brand-name">NFS Media</span>
+            </div>
+            <!-- Navigation links -->
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul>
+                    <li>
+                        <a href="#services" class="footer-nav-link">
+                            <svg width="18" height="18" fill="#88bf4c" style="vertical-align:middle;margin-right:7px;" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#88bf4c" stroke-width="2" fill="none"/><path d="M12 7v5l3 3" stroke="#88bf4c" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer-nav-link">
+                            <svg width="18" height="18" fill="#88bf4c" style="vertical-align:middle;margin-right:7px;" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="3" stroke="#88bf4c" stroke-width="2" fill="none"/><path d="M16 3v4M8 3v4" stroke="#88bf4c" stroke-width="2" fill="none"/></svg>
+                            <span>Portfolio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="footer-nav-link">
+                            <svg width="18" height="18" fill="#88bf4c" style="vertical-align:middle;margin-right:7px;" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" stroke="#88bf4c" stroke-width="2" fill="none"/><path d="M4 20c0-3.3 3.6-6 8-6s8 2.7 8 6" stroke="#88bf4c" stroke-width="2" fill="none"/></svg>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer-nav-link">
+                            <svg width="18" height="18" fill="#88bf4c" style="vertical-align:middle;margin-right:7px;" viewBox="0 0 24 24"><path d="M21 8V7l-3 2-2-2-3 2-2-2-3 2V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8"/></svg>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <style>
+                .footer-nav ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.7rem;
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                }
+                .footer-nav-link {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5em;
+                    font-size: 1.13rem;
+                    font-weight: 700;
+                    color: #fff;
+                    background: linear-gradient(90deg, #232323 60%, #88bf4c22 100%);
+                    border-radius: 9px;
+                    padding: 0.7em 1.2em;
+                    text-decoration: none;
+                    letter-spacing: 0.5px;
+                    box-shadow: 0 2px 12px #88bf4c11;
+                    transition: background 0.18s, color 0.18s, box-shadow 0.18s, transform 0.18s;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .footer-nav-link::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 0%;
+                    height: 3px;
+                    background: linear-gradient(90deg, #88bf4c 60%, #fff 100%);
+                    transition: width 0.22s cubic-bezier(.23,1.01,.32,1);
+                    border-radius: 2px;
+                }
+                .footer-nav-link:hover,
+                .footer-nav-link:focus {
+                    background: linear-gradient(90deg, #88bf4c 60%, #a6e36a 100%);
+                    color: #111;
+                    box-shadow: 0 4px 18px #88bf4c33;
+                    transform: translateY(-2px) scale(1.03);
+                }
+                .footer-nav-link:hover::after,
+                .footer-nav-link:focus::after {
+                    width: 100%;
+                }
+                .footer-nav-link svg {
+                    flex-shrink: 0;
+                    filter: drop-shadow(0 2px 8px #88bf4c22);
+                    transition: filter 0.18s;
+                }
+                .footer-nav-link:hover svg,
+                .footer-nav-link:focus svg {
+                    filter: drop-shadow(0 4px 16px #a6e36a88);
+                }
+                @media (max-width: 900px) {
+                    .footer-nav ul {
+                        flex-direction: row;
+                        gap: 0.5rem;
+                        flex-wrap: wrap;
+                    }
+                    .footer-nav-link {
+                        font-size: 1.05rem;
+                        padding: 0.5em 0.9em;
+                        border-radius: 7px;
+                    }
+                }
+                @media (max-width: 600px) {
+                    .footer-nav-link {
+                        font-size: 0.97rem;
+                        padding: 0.4em 0.7em;
+                        border-radius: 6px;
+                    }
+                }
+            </style>
+            <!-- Social icons -->
+            <div class="footer-social">
+                <a href="https://www.facebook.com/profile.php?id=61563825655115" target="_blank" rel="noopener" aria-label="Facebook">
+                    <svg width="22" height="22" fill="#88bf4c" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24H12.82v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
+                </a>
+                <a href="https://www.instagram.com/nfsme.dia/" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg width="22" height="22" fill="#88bf4c" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.242-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608.974-.974 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.012 7.052.07 5.771.128 4.659.387 3.678 1.368 2.697 2.349 2.438 3.461 2.38 4.742.012 8.332 0 8.741 0 12c0 3.259.012 3.668.07 4.948.058 1.281.317 2.393 1.298 3.374.981.981 2.093 1.24 3.374 1.298C8.332 23.988 8.741 24 12 24s3.668-.012 4.948-.07c1.281-.058 2.393-.317 3.374-1.298.981-.981 1.24-2.093 1.298-3.374.058-1.28.07-1.689.07-4.948s-.012-3.668-.07-4.948c-.058-1.281-.317-2.393-1.298-3.374-.981-.981-2.093-1.24-3.374-1.298C15.668.012 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                </a>
+                <a href="https://www.tiktok.com/@nfsmediaptyltd" target="_blank" rel="noopener" aria-label="TikTok">
+                    <svg width="22" height="22" fill="#88bf4c" viewBox="0 0 24 24"><path d="M12.75 2.001a1.25 1.25 0 0 1 1.25 1.25v11.5a2.25 2.25 0 1 1-2.25-2.25h.25V9.5h-.25a5.25 5.25 0 1 0 5.25 5.25V7.25a4.75 4.75 0 0 0 4.75 4.75v2.25a7 7 0 0 1-7-7V3.251a1.25 1.25 0 0 1 1.25-1.25z"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@NFSMarketingAgency" target="_blank" rel="noopener" aria-label="YouTube" style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#232323;border:1.5px solid #88bf4c;transition:background 0.2s,box-shadow 0.2s;">
+                            <svg width="20" height="20" fill="#88bf4c" viewBox="0 0 24 24"><path d="M23.498 6.186a2.994 2.994 0 0 0-2.108-2.116C19.163 3.5 12 3.5 12 3.5s-7.163 0-9.39.57A2.994 2.994 0 0 0 .502 6.186C0 8.413 0 12 0 12s0 3.587.502 5.814a2.994 2.994 0 0 0 2.108 2.116C4.837 20.5 12 20.5 12 20.5s7.163 0 9.39-.57a2.994 2.994 0 0 0 2.108-2.116C24 15.587 24 12 24 12s0-3.587-.502-5.814zM9.545 15.568V8.432l6.545 3.568-6.545 3.568z"/></svg>
+                        </a>
+                <a href="https://x.com/nfsmedia053" target="_blank" rel="noopener" aria-label="Twitter">
+                    <svg width="22" height="22" fill="#88bf4c" viewBox="0 0 24 24"><path d="M24 4.557a9.83 9.83 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195A4.916 4.916 0 0 0 16.616 3c-2.717 0-4.92 2.206-4.92 4.924 0 .386.045.763.127 1.124C7.728 8.807 4.1 6.884 1.671 3.965a4.822 4.822 0 0 0-.666 2.475c0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.867 9.867 0 0 1 0 21.543a13.94 13.94 0 0 0 7.548 2.209c9.057 0 14.009-7.496 14.009-13.986 0-.213-.005-.425-.014-.636A9.936 9.936 0 0 0 24 4.557z"/></svg>
+                </a>
+            </div>
+            <!-- Contact info -->
+            <div class="footer-contact">
+                <a href="mailto:sales@nfsmedia.co.za" class="footer-contact-link">
+                    <svg width="18" height="18" fill="#88bf4c" style="vertical-align:middle;margin-right:6px;" viewBox="0 0 24 24"><path d="M21 8V7l-3 2-2-2-3 2-2-2-3 2V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/><path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8"/></svg>
+                    sales@nfsmedia.co.za
+                </a>
+                <a href="tel:+27817721183" class="footer-contact-link">
+                    <svg width="18" height="18" fill="#88bf4c" style="vertical-align:middle;margin-right:6px;" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.07 21 3 13.93 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.35.27 2.67.76 3.88a1 1 0 0 1-.21 1.11l-2.2 2.2z"/></svg>
+                    +27 81 772 1183
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2025 NFS Media</span>
+            <span>
+                <a href="#" class="footer-policy-link" style="color: #222;">Website by M&M NovaTech</a>
+                &nbsp;|&nbsp;
+                <a href="#" class="footer-policy-link" style="color: #222;">All rights reserved</a>
+            </span>
+        </div>
+        <style>
+            .simple-footer {
+                background: #181818;
+                color: #fff;
+                font-family: 'Segoe UI', Arial, sans-serif;
+                width: 100vw;
+                min-width: 0;
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                border-top: 1.5px solid #232323;
+            }
+            .footer-content {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-between;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 2.2rem 2vw 1.2rem 2vw;
+                gap: 2.5rem;
+            }
+            .footer-brand {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                min-width: 160px;
+                flex: 1 1 180px;
+            }
+            .footer-logo {
+                width: 2.7rem;
+                height: 2.7rem;
+                border-radius: 10px;
+                background: #232323;
+                border: 2px solid #88bf4c;
+                object-fit: contain;
+            }
+            .footer-brand-name {
+                font-size: 1.3rem;
+                font-weight: 900;
+                color: #88bf4c;
+                letter-spacing: 1px;
+            }
+            .footer-nav {
+                flex: 1 1 160px;
+                min-width: 120px;
+                margin-top: 0.2rem;
+            }
+            .footer-nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            .footer-nav a {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.08rem;
+                padding: 0.4em 0.7em;
+                border-radius: 7px;
+                transition: background 0.18s, color 0.18s;
+                display: inline-block;
+            }
+            .footer-nav a:hover,
+            .footer-nav a:focus {
+                color: #88bf4c;
+                background: #232323;
+            }
+            .footer-social {
+                display: flex;
+                gap: 0.7rem;
+                flex: 1 1 120px;
+                min-width: 100px;
+                align-items: center;
+                margin-top: 0.2rem;
+            }
+            .footer-social a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.2rem;
+                height: 2.2rem;
+                border-radius: 50%;
+                background: #232323;
+                border: 1.5px solid #88bf4c;
+                transition: background 0.2s, box-shadow 0.2s;
+                font-size: 1.2rem;
+            }
+            .footer-social a:hover,
+            .footer-social a:focus {
+                background: #88bf4c;
+                box-shadow: 0 2px 12px #88bf4c33;
+            }
+            .footer-social a:hover svg,
+            .footer-social a:focus svg {
+                fill: #fff !important;
+            }
+            .footer-contact {
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+                flex: 1 1 180px;
+                min-width: 120px;
+                margin-top: 0.2rem;
+            }
+            .footer-contact-link {
+                color: #88bf4c;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.05rem;
+                display: flex;
+                align-items: center;
+                gap: 0.2em;
+                border-radius: 6px;
+                padding: 0.2em 0.4em;
+                transition: color 0.2s, background 0.2s;
+                word-break: break-all;
+            }
+            .footer-contact-link:hover,
+            .footer-contact-link:focus {
+                color: #a6e36a;
+                background: #232323;
+            }
+            .footer-bottom {
+                border-top: 1px solid #232323;
+                margin: 0 auto;
+                max-width: 1200px;
+                padding: 1.1rem 2vw 0.7rem 2vw;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+                font-size: 0.98rem;
+                color: #88bf4c;
+                letter-spacing: 0.5px;
+            }
+            .footer-policy-link {
+                color: #fff;
+                text-decoration: none;
+                opacity: 0.8;
+                font-size: 0.98rem;
+                margin: 0 0.2em;
+                transition: color 0.18s;
+            }
+            .footer-policy-link:hover,
+            .footer-policy-link:focus {
+                color: #88bf4c;
+                text-decoration: underline;
+            }
+            /* Responsive: stack vertically on mobile */
+            @media (max-width: 900px) {
+                .footer-content {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 1.5rem;
+                    padding: 1.5rem 1rem 1rem 1rem;
+                }
+                .footer-brand,
+                .footer-nav,
+                .footer-social,
+                .footer-contact {
+                    min-width: 0;
+                    width: 100%;
+                    justify-content: flex-start;
+                    margin-top: 0;
+                }
+                .footer-social {
+                    margin-bottom: 0.5rem;
+                }
+                .footer-bottom {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 0.7rem;
+                    padding: 1rem 1rem 0.5rem 1rem;
+                    font-size: 0.97rem;
+                }
+            }
+            @media (max-width: 600px) {
+                .footer-content {
+                    padding: 1rem 0.5rem 0.7rem 0.5rem;
+                    gap: 1rem;
+                }
+                .footer-logo {
+                    width: 2rem;
+                    height: 2rem;
+                }
+                .footer-brand-name {
+                    font-size: 1.05rem;
+                }
+                .footer-nav a {
+                    font-size: 1rem;
+                    padding: 0.3em 0.5em;
+                }
+                .footer-social a {
+                    width: 1.7rem;
+                    height: 1.7rem;
+                    font-size: 1rem;
+                }
+                .footer-contact-link {
+                    font-size: 0.97rem;
+                    padding: 0.15em 0.3em;
+                }
+                .footer-bottom {
+                    font-size: 0.95rem;
+                    padding: 0.7rem 0.5rem 0.3rem 0.5rem;
+                }
+            }
+            /* Touch-friendly tap targets */
+            @media (hover: none) and (pointer: coarse) {
+                .footer-nav a,
+                .footer-contact-link,
+                .footer-social a {
+                    padding: 1em 1.2em;
+                    font-size: 1.1rem;
+                }
+            }
+            /* Prevent horizontal scroll */
+            .simple-footer, .footer-content, .footer-bottom {
+                box-sizing: border-box;
+                overflow-x: hidden;
+            }
+        </style>
+    </footer>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/+27817721183" class="whatsapp-float" title="Chat with us on WhatsApp" target="_blank" rel="noopener">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="#fff" style="display:block;margin:auto;" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 3C9.373 3 4 8.373 4 15c0 2.65.87 5.09 2.36 7.09L4 29l7.18-2.33A12.93 12.93 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.94 0-3.78-.5-5.36-1.37l-.38-.22-4.27 1.39 1.4-4.16-.25-.4A9.97 9.97 0 0 1 6 15c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.13-7.47c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.4-.83-.74-1.39-1.65-1.56-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.35-.01-.54-.01-.19 0-.5.07-.76.36-.26.29-1 1-.97 2.43.03 1.43 1.03 2.81 1.18 3 .15.19 2.03 3.1 4.93 4.23.69.29 1.23.46 1.65.59.69.22 1.32.19 1.82.12.56-.08 1.65-.67 1.89-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"/>
+        </svg>
+    </a>
+    <script>
+        // Animate fade-in-up on scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeEls = document.querySelectorAll('.fade-in-up');
+            fadeEls.forEach((el, i) => {
+                el.style.opacity = 0;
+                el.style.animationDelay = el.style.animationDelay || (i * 0.1) + 's';
+            });
+            function reveal() {
+                fadeEls.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 80) {
+                        el.style.opacity = 1;
+                        el.classList.add('animated');
+                    }
+                });
+            }
+            window.addEventListener('scroll', reveal);
+            reveal();
+        });
+        // Contact form (demo only)
+        // Removed duplicate submit handler to allow real submission and validation.
+    </script>
+</body>
+</html>
